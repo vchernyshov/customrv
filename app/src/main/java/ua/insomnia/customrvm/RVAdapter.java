@@ -53,4 +53,9 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.ViewHolder> {
         Collections.swap(items, items.size() - 1, 0);
         notifyItemMoved(items.size() - 1, 0);
     }
+
+    public void moveItemToFront(){
+        Collections.swap(items, 0, items.size() - 1);
+        notifyItemMoved(0, items.size() - 1);
+    }
 }

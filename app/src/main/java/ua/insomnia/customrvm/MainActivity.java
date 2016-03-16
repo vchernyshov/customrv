@@ -56,12 +56,12 @@ public class MainActivity extends AppCompatActivity {
 //                list.add(0, from);
 //                adapter.notifyDataSetChanged();
 
-                if (((CLManager)layoutManager).isExpanded()) {
-                    ((CLManager) layoutManager).setExpanded(false);
-                } else {
-                    ((CLManager) layoutManager).setExpanded(true);
-                }
-//                ((RVAdapter)adapter).moveItemToBack();
+//                if (((CLManager)layoutManager).isExpanded()) {
+//                    ((CLManager) layoutManager).setExpanded(false);
+//                } else {
+//                    ((CLManager) layoutManager).setExpanded(true);
+//                }
+                ((RVAdapter)adapter).moveItemToFront();
 
             }
         });
